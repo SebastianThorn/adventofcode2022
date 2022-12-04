@@ -41,8 +41,6 @@ top_x_to_get = 3
 end
 
 pp elf_top_x
-
-# elf_top_x_sum = elf_top_x.map(&last[:pocket_sum]).sum
 elf_top_x_sum = elf_top_x.map {|elf| elf[:pocket_sum]}.sum
 
 puts "Sum: #{elf_top_x_sum}"
